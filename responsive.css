@@ -1,0 +1,84 @@
+/*非モバイルレイアウト*/
+@media screen and (min-width:776px){
+
+    .res-mobile-open{
+        display:none;
+    }
+    
+
+
+}
+
+/*モバイル向けレイアウト*/
+@media screen and (max-width:776px){
+
+.res-mobile-open{
+    display:block;
+}
+
+.res-mobile-close{
+    display: none;
+}
+
+.header-left{
+    display: block;/*これで全てのflex指定を一度解除できる*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+.infomation{
+    height: 600px;
+}
+
+.box3{
+    width: 100%;
+}
+
+.box-lesson{
+    display: block;
+    height: 40px;
+}
+
+.res-lesson-img{
+    height: 40px;
+}
+
+.res-lesson-box-left{
+    text-align: left;
+}
+
+.res-lesson-label{
+    display: inline-block;
+    width: 100%;
+}
+
+.res-lesson-lh{
+    vertical-align: 100%;
+    font-weight: bold;
+}
+
+.res-box-lesson-under{
+    height: 0;/*初期高さ0→ラベルクリックで高さ54pxに*/
+    opacity: 0;/*たまに戻ったときはみ出るので、中身を透明に＆ラベルクリックで非透過に*/
+    overflow: hidden;/*これがないと、2個目以降のラベルがクリックできない模様*/
+    transition: 1s;
+    background-color: #FEF5E0;
+    text-align: left;
+}
+
+.box-lesson-right{
+ display: none;
+}
+
+
+.click:checked + .res-box-lesson-under{
+height: 200px;/*autoだと急速に動いてしまう*/
+opacity: 1;
+}
+
+
+
+
+
+

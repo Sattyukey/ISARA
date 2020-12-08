@@ -1,0 +1,519 @@
+body {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family:'Meiryo';
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    
+  }
+
+  .page-header{
+    background-color: #fff;
+    width: 100%;
+    max-width:1200px;/*最大幅指定*/
+    display: flex;/*子要素を配置移動可能にする*/
+    justify-content: space-between;/*子要素を両端均等に配置*/
+    align-items: center;/*高さ揃え*/
+    margin: 0 auto;
+    height: 76px;
+  }
+
+  .wrapper{/*中央配置*/
+    margin:0 auto;/*中央配置*/
+    padding:0 30px;/*サイドの余白*/
+  }
+
+  .header-left{
+    height: 44px;
+    display: flex;/*子要素を配置移動可能にする*/
+    justify-content: flex-start;/*子要素を左揃えに配置*/
+  }
+
+  .header-right{
+    height: 44px;
+
+  }
+
+  .logo{
+    width:128px;
+
+  }
+
+  .bottom-20{
+    bottom: -20px;
+  }
+
+  .logo-title{
+    position: relative;/*位置微調整に必要*/
+
+    font-weight: 600;/*文字太さ*/
+    font-style: normal;
+    font-size: 14px;
+    color:#333333;
+    line-height: 22px;
+
+  }
+
+.btn {
+    padding: 15px 0px;/*ワイズハイト指定だと中文字がセンタリングしない*/
+    display: inline-block;/*わからんけどこれないとうまくいかん*/
+    color: white;
+    border-radius: 24px;
+    text-align: center;
+    background-color: #DA6B64;
+    cursor: pointer;
+  }
+
+  .hover-red:hover{
+    background-color:#df4338;
+  }
+
+
+.header-right-font{
+  width: 320px;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;/*文字太さ*/
+  color:#ffffff;
+  line-height: 22px;
+} 
+
+.res-mobile-open{
+  display: none;
+}
+
+.btn-tap{
+  width: 60px;
+  height: 60px;
+  background-color: #DA6B64;
+  color: white;
+  text-align: center;
+  margin-right: 4%;
+}
+
+.block{
+  display: block;
+}
+
+.text-header-right-mobile{
+  font-size: 12px;
+}
+
+.main{
+  height: 500px;/*領域の大きさを指定*/
+  padding:100px;/*縦位置を微調整*/
+  
+}
+
+.text-center{
+  text-align: center;/*要素内をセンタリング*/
+}
+
+.main-back{
+  height: 500px;/*背景の大きさ（＝領域の大きさ）を指定*/
+  background-image: url(img/main.jpg);
+  background-size: cover;/*縦横比保持しつつ、領域を覆う最小サイズになるよう拡大縮小*/
+  background-position: center;
+}
+
+.main img{
+  height: 85px;
+  margin:40px;
+}
+
+h1{
+  font-style: normal;
+  font-weight: 600;/*文字太さ*/
+  font-size: 28px;
+  line-height: 45px;
+  color:#333333;
+}
+
+h2{
+  font-style: normal;
+  font-weight: 600;/*文字太さ*/
+  font-size: 20px;
+  line-height: 22px;
+  color:#333333;
+}
+
+.infomation{
+  height: 585px;/*領域の大きさを指定*/
+  padding-top:20px;
+  background-color: #EBB94D;
+}
+
+
+.text-color-white{
+  color:white;
+  
+}
+
+.text-margin-wide{
+  margin-top: 45px;
+
+}
+
+.text-color-red{
+  color:#c7254e;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 4px;/*文字間隔を指定*/
+  background-color: #fff;
+  width: 600px;
+}
+
+.big-btn{
+  display: block;
+  max-width: 600px;
+  max-height: 90px;
+  padding: 40px 90px;/*ワイズハイト指定だと中文字がセンタリングしない*/
+  border-radius: 60px;
+
+  font-size: 30px;
+  font-weight: 600;
+  margin:44px auto;
+
+}
+
+
+.fa{
+
+}
+
+.color-twitter{
+  background-color: #55acee;
+}
+
+.hover-twitter:hover{
+  background-color: #299bf3;
+}
+
+.color-facebook{
+  background-color: #3b5998;
+}
+
+.hover-facebook:hover{
+  background-color: #194197;
+}
+
+
+.about1{
+  height: 560px;/*領域の大きさを指定*/
+  padding-top:20px;
+  background-image: url(img/introbottom.jpg);
+  background-size: cover;/*縦横比保持しつつ、領域を覆う最小サイズになるよう拡大縮小*/
+  background-position: center;/*画像中央基準で画像表示する*/
+}
+
+.position-base{
+  position: relative;/*親要素基準で子要素を動かすときに使うクラス*/
+}
+
+.title-bace-space{
+  width:90%;
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;/*縦横指定でブロックになり？左揃えになるためセンタリング*/
+  bottom: 40px;
+}
+
+.form-Parentheses::before{
+  content:'';/*これが無いとBOXの中身が無く消えてしまう*/
+  position: absolute;
+  box-sizing: border-box;
+  color: orange;
+  width: 30px;/*カッコの大きさ*/
+  height: 30px;/*カッコの大きさ*/
+
+  top: -30px;/*カッコの大きさと同じにする*/
+  left: -30px;/*カッコの大きさと同じにする*/
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+}
+
+.form-Parentheses::after{
+  content:'';/*これが無いとBOXの中身が無く消えてしまう*/
+  position: absolute;
+  box-sizing: border-box;
+  color: orange;
+  width: 30px;/*カッコの大きさ*/
+  height: 30px;/*カッコの大きさ*/
+  
+  top: 100%;
+  left: 100%;
+  border-bottom: 4px solid #ebb94d;
+  border-right: 4px solid #ebb94d;
+}
+
+.top-space{
+  margin-top:100px;
+}
+
+.font-weight-normal{
+  font-weight: normal;
+}
+
+.underline{
+  background: linear-gradient(transparent 70%, orange 0%);/*下線を引く前者は空白量、後者はグラデーション度合*/
+  font-weight: bolder;/*太字強調*/
+}
+
+.circle{
+  display: inline-block;/*これでセンタリングするはずだが…*/
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
+}
+
+.possition-layer{
+  height: 0;/*要素の高さを0にする*/
+  position: relative;/*「重なりアリ」にすることで子要素を他要素上に表示する。*/
+  bottom: 40px;/*位置を微調整。*/
+}
+
+.about2{
+  padding-top:20px;
+  padding-bottom: 40px;
+  background-color: #FEF5E0;
+}
+
+.box-sort{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.box-white{
+  border: 3px solid orange;
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.box{
+  display: inline-block;
+  margin: 30px;
+}
+
+.top-padding{
+  padding-top: 40px;
+}
+
+.about3{
+
+}
+
+.about3-upper{
+  background-image: url(img/aboutsecondbg.jpg);
+  background-size: cover;/*縦横比保持しつつ、領域を覆う最小サイズになるよう拡大縮小*/
+  background-position: center;/*画像中央基準で画像表示する*/
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.box3-sort{
+
+}
+
+.box3{
+  display: inline-block;
+  background-color: #fff;
+  width: 400px;
+  height: 190px;
+  padding: 10px;
+  margin:40px 10px;
+}
+
+.orange{
+  color: orange;
+}
+
+.orange-bgc{
+  background-color: orange;
+}
+
+.m30{
+  margin: 30px;
+}
+
+.font-weight-bold{
+  font-weight: bold;
+}
+
+.font-size-small{
+  font-size: 16px;
+}
+
+.about3-under{
+  height: 100px;
+  background-color: #016EA9;
+}
+
+.about-others{
+  height: 1000px;
+  background-color: gray;
+}
+
+.lesson-flow{
+ height: auto;
+}
+
+.box-lesson{
+  width: 1000px;
+  height: 200px;
+  padding: 15px;
+  background-color: #FEF5E0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;/*子要素がtext-centerが解除されるので、marginでセンタリング*/
+}
+
+
+
+.lesson-img{
+  max-width: 800px;
+}
+
+.box-lesson-left{
+
+}
+
+.box-lesson-right{
+  text-align: left;
+}
+
+.p40{
+  padding: 40px;
+}
+
+.fa{
+
+}
+
+.fa-laptop:before {
+  content: "\f109";
+}
+
+.form{
+  height: 600px;
+  background-color: #EBB94D;
+}
+
+.form-sort{
+  display: flex;
+  flex-direction: column;/*縦並び*/
+}
+
+.form-box{
+  width: 700px;
+}
+
+.m0a{
+  margin: 0 auto;
+}
+
+.qa{
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.qa-right{
+
+  background-color: rgb(65, 60, 60);
+}
+
+.qa-label:hover{
+  text-decoration: underline;
+}
+
+.color-blue{
+  color: rgb(110, 110, 241);
+}
+
+.color-gray{
+  color: rgb(207, 193, 193);
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.float-right{
+  float: right;
+}
+
+.qa-box{
+  width: 70%;
+  border: 2px solid rgb(231, 225, 225);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.qa-label{
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+}
+
+.footer{
+  height: 150px;
+  background-color: #ddd9d9;
+  padding: 40px;
+}
+
+
+
+.page-top{
+  position: fixed;
+  right: 40px;
+  bottom: 60px;
+  background-color: rgb(211, 202, 202);
+  opacity: 0.6;
+  padding: 20px;
+  font-size: 30px;
+  color: black;
+}
+
+.none{
+  display: none;
+}
+
+.ini-hide{
+  height: 0;/*初期高さ0→ラベルクリックで高さ54pxに*/
+  opacity: 0;/*たまに戻ったときはみ出るので、中身を透明に＆ラベルクリックで非透過に*/
+  overflow: hidden;/*これがないと、2個目以降のラベルがクリックできない模様*/
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.acodion{
+  transition: 1s;/*クリック時の動きを滑らかに*/
+}
+
+.click:checked + .q-link{
+height: 70px;/*autoだと急速に動いてしまう*/
+opacity: 1;
+padding: 20px;
+}
+
+
+
